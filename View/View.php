@@ -1,7 +1,18 @@
 <?php
 
-/* 
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
- */
+namespace view;
+
+class View {
+    private $controller;
+    private $model;
+    
+    public function __construct($controller, $model) {
+        $this->controller = $controller;
+        $this->model = $model;
+    }
+    
+    public function output(){
+        return $this->model->title;
+    }
+}
 

@@ -1,7 +1,16 @@
 <?php
 
-/* 
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
- */
+namespace controller;
 
+class Controller {
+    
+    private $model;
+    
+    public function __construct($model) {
+        $this->model = $model;
+    }
+    
+    public function action(){
+        $this->model->title = "This is controller change data";
+    }
+}
