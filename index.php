@@ -1,16 +1,17 @@
 <?php
 
-use model\Model;
-use view\View;
-use controller\Controller;
+use Model\Model;
+use View\View;
+use Controller\Controller;
 
 require_once 'vendor/autoload.php';
 
 $model = new Model();
-$controller = new Controller($model);
-$view = new View($controller, $model);
+print_r($model);
+//$controller = new Controller($model);
+//$view = new View($controller, $model);
 
-echo $view->output();
+//echo $view->output();
 
 
 

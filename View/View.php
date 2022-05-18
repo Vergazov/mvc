@@ -1,6 +1,6 @@
 <?php
 
-namespace view;
+namespace View;
 
 class View {
     private $controller;
